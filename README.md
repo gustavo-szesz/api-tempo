@@ -1,4 +1,4 @@
-<p align="center">
+![image](https://github.com/user-attachments/assets/9d515a32-36c6-4e4e-ac51-bcde448734d5)<p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
@@ -24,6 +24,8 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+PrintScreen of the project running ![image](https://github.com/user-attachments/assets/3b98ba6a-270f-4d74-8d2e-b8afeb56fbec)
+
 
 ## Project setup
 
