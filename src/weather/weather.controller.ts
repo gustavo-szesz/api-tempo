@@ -1,14 +1,13 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { WeatherService } from './weather.service';
-import { CreateWeatherDto } from './dto/create-weather.dto';
-import { UpdateWeatherDto } from './dto/update-weather.dto';
+import { WeatherResponseDto } from './dto/weather-response.dto';
 
 @Controller('weather')
 export class WeatherController {
   constructor(private readonly weatherService: WeatherService) {}
 
-  @Get('city/:cityName')
-  getCityWeather(@Param('cityName') cityName: string) {
-    return this.weatherService.getCityWeather(cityName);
+  @Get(':city')
+  getWeather(@Param('city') city: string): Promise<WeatherResponseDto> {
+    return this.weatherService.getCityWeather(city);
   }
 }
